@@ -1,50 +1,54 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
 
-<!-- Mirrored from solapa-html.vercel.app/solar-energy.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 12:10:11 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+
 <head>
 	<meta charset="utf-8">
 	<title>Kura Systems</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'try.css' %}">
 
-	<!-- Stylesheets -->
-	<link href="assets/vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/vendors/fontawesome/css/font-awesome.css" rel="stylesheet">
-	<link href="assets/vendors/flaticons/flaticon.css" rel="stylesheet">
-	<link href="assets/vendors/animate/css/animate.css" rel="stylesheet">
-	<link href="assets/vendors/owl-slider/css/owl.css" rel="stylesheet">
-	<link href="assets/vendors/icomoon-fonts/css/style.css" rel="stylesheet">
-	<link href="assets/vendors/jquery-ui/css/jquery-ui.css" rel="stylesheet">
-	<link href="assets/vendors/animate/css/custom-animate.css" rel="stylesheet">
-	<link href="assets/vendors/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
-
+ 
+	<link href="{% static 'assets/vendors/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+	 <link href="{% static 'assets/vendors/fontawesome/css/font-awesome.css'  %}" rel="stylesheet">  
+	 <link href="{% static 'assets/vendors/flaticons/flaticon.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/animate/css/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/owl-slider/css/owl.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/icomoon-fonts/css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/jquery-ui/css/jquery-ui.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/animate/css/custom-animate.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/fancybox/css/jquery.fancybox.min.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/swiper/swiper.min.css' %}" rel="stylesheet">	
 	<!-- Catamaran Font -->
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&amp;display=swap"
 		rel="stylesheet">
 
 	<!-- Smooch Sans -->
 	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
-		rel="stylesheet">
+		rel="stylesheet"> 
 
-	<!-- Favicons Icons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-	<link rel="manifest" href="img/kura card.png" />
+	 <!-- Favicons Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}" />
+	<link rel="icon" type="/image/png" sizes="32x32" href="{% static 'img/kuralogo.png' %}" />
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/kuralogo.png' %}" />
+	<link rel="manifest" href="{% static 'img/kura card.png' %}" />  
 
 	<!-- Responsive -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
 
-	<link href="assets/css/solapa.css" rel="stylesheet">
-	<link href="assets/css/solapa-responsive.css" rel="stylesheet">
+	<!-- <link href="{% static 'css/solapa.css' %}" rel="stylesheet">-->
+	 <!--<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">--> 
+
+ 
+	<link href="{% static 'css/solapa-responsive.css' %}" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="card style.css">
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<link rel="stylesheet" href="{% static 'card style.css' %}"/>  
+	
 	<script>
 		$(document).ready(function(){
 			$(".wish-icon i").click(function(){
@@ -60,7 +64,7 @@
 
 	
 
-		<!-- Preloader -->
+		 
 		<div class="preloader">
 			<span></span>
 		</div>
@@ -78,7 +82,7 @@
 							<li><a href="mailto:Info@kurasystems.com"><span
 										class="icon icon-email"></span>Info@kurasystems.com</a></li>
 										<div class="main-header__button-box">
-											<img src="img/what.png" style="height:25px ;">
+											<img src="/static/img/what.png" style="height:25px ;">
 											<a href="https://wa.me/+91-8882812100" class="theme-btn btn-style-three"> <span class="txt">chat on Whatsapp
 													us</span></a>
 										</div>
@@ -159,7 +163,7 @@
 
 						<!-- Logo Box -->
 						<div class="main-header__logo-box">
-							<div class="main-header__logo"><a href="#"><img src="img/kuralogo.png" alt=""
+							<div class="main-header__logo"><a href="#"><img src="/static/img/kuralogo.png" alt=""
 										title=""></a></div>
 						</div>
 
@@ -269,7 +273,7 @@
 				<div class="container clearfix">
 					<!-- Logo -->
 					<div class="sticky-header__logo pull-left">
-						<a href="#" title=""><img src="img/kura card.png" alt=""
+						<a href="#" title=""><img src="/static/img/kura card.png" alt=""
 								title="" style="height: 40px;"></a>
 					</div>
 					<!--Right Col-->
@@ -294,7 +298,7 @@
 				<div class="close-btn"><span class="icon fas fa-times"></span></div>
 
 				<nav class="mobile-menu__box">
-					<div class="mobile-menu__logo"><a href="#"><img src="img/kuralogo.png" alt="" title=""></a>
+					<div class="mobile-menu__logo"><a href="#"><img src="/static/img/kuralogo.png" alt="" title=""></a>
 					</div>
 					<div class="mobile-menu__outer">
 						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -512,7 +516,7 @@
 					<h6 class="card-subtitle"></h6>
 					<div class="row">
 						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="img/wateroverflowalarm.jpg" style="height:300px;width:150px"
+							<div class="white-box text-center"><img src="/static/img/wateroverflowalarm.jpg" style="height:300px;width:150px"
 									class="img-responsive"></div>
 						</div>
 						<div class="col-lg-6 col-md-7 col-sm-3">
@@ -554,13 +558,13 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
 															<h4>0FA-99</h4>									
 															
 															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
+															<a href="#" class="btn btn-primary" >Add to Cart</a>
 														</div>						
 													</div>
 												</div>
@@ -586,7 +590,7 @@
 					<h6 class="card-subtitle"></h6>
 					<div class="row" style="justify-content:space-around">
 						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="img/waterlevelindicator.jpg" style="height:300px;width:150px"
+							<div class="white-box text-center"><img src="/static/img/waterlevelindicator.jpg" style="height:300px;width:150px"
 									class="img-responsive"></div>
 						</div>
 						<div class="col-lg-6 col-md-7 col-sm-3">
@@ -621,7 +625,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
 															<h4>DL1-5</h4>									
@@ -635,7 +639,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/productimage4.png" class="img-fluid" alt="Headphone">
+															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
 														</div>
 														<div class="thumb-content">
 															<h4>DL1-100</h4>									
@@ -649,7 +653,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
+															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
 														</div>
 														<div class="thumb-content">
 															<h4>DL1-100W</h4>									
@@ -663,7 +667,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/productimage4.png" class="img-fluid" alt="Headphone">
+															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
 														</div>
 														<div class="thumb-content">
 															<h4>ILI-100W</h4>									
@@ -677,7 +681,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/productimage4.png" class="img-fluid" alt="Headphone">
+															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
 														</div>
 														<div class="thumb-content">
 															<h4>GLI-100A</h4>									
@@ -712,7 +716,7 @@
 					<h6 class="card-subtitle"></h6>
 					<div class="row">
 						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="img/waterlevelcontroller.jpg" style="height:300px;width:150px"
+							<div class="white-box text-center"><img src="/static/img/waterlevelcontroller.jpg" style="height:300px;width:150px"
 									class="img-responsive"></div>
 						</div>
 						<div class="col-lg-6 col-md-7 col-sm-3">
@@ -750,7 +754,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
 															<h4>WLC-PRO</h4>									
@@ -764,7 +768,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/productimage4.png" class="img-fluid" alt="Headphone">
+															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
 														</div>
 														<div class="thumb-content">
 															<h4>WLC-SUB-PRO</h4>									
@@ -778,7 +782,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
+															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
 														</div>
 														<div class="thumb-content">
 															<h4>WLC-DIGITAL</h4>									
@@ -792,7 +796,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
+															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
 														</div>
 														<div class="thumb-content">
 															<h4>WLC-SEMI</h4>									
@@ -806,7 +810,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
+															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
 														</div>
 														<div class="thumb-content">
 															<h4>WLC-RTS</h4>									
@@ -838,7 +842,7 @@
 					<h6 class="card-subtitle"></h6>
 					<div class="row">
 						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="img/submersible.png" style="height:300px;width:150px"
+							<div class="white-box text-center"><img src="/static/img/submersible.png" style="height:300px;width:150px"
 									class="img-responsive"></div>
 						</div>
 						<div class="col-lg-6 col-md-7 col-sm-3">
@@ -876,7 +880,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
 															<h3>DCS-5R</h3>									
@@ -890,7 +894,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/productimage4.png" class="img-fluid" alt="Headphone">
+															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
 														</div>
 														<div class="thumb-content">
 															<h4>SCS-5</h4>									
@@ -904,7 +908,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
+															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
 														</div>
 														<div class="thumb-content">
 															<h4>DCS-5C</h4>									
@@ -918,7 +922,7 @@
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
+															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
 														</div>
 														<div class="thumb-content">
 															<h4>TPS-5</h4>									
@@ -945,9 +949,9 @@
 		</div>
 	
 		<footer class="site-footer" style="margin-top: 20px;">
-			<div class="site-footer__shape-one" style="background-image: url(assets/images/shapes/footer-shape-1.png)">
+			<div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
 			</div>
-			<div class="site-footer__shape-two" style="background-image: url(assets/images/shapes/footer-shape-1.png)">
+			<div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
 			</div>
 			<div class="container">
 				<!-- Site Footer Middle -->
@@ -1005,11 +1009,11 @@
 								<!-- <li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
 								<li><a href="#" class="fa fa-twitter"></a></li>
 								<li><a href="#" class="fab fa-instagram"></a></li> -->
-								<a href="https://www.facebook.com/SmartKSPL"><img src="./img/facebook.png" alt=""></a>
-                      <a href="https://www.facebook.com/SmartKSPL"><img src="./img/insta.png" alt=""></a>
-                      <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="./img/youtube.png"
+								<a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/facebook.png" alt=""></a>
+                      <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/insta.png" alt=""></a>
+                      <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="/static/img/youtube.png"
                           alt=""></a>
-                      <a href="https://www.linkedin.com/company/kura-systems/"><img src="./img/linkedinimage.png" alt=""></a>
+                      <a href="https://www.linkedin.com/company/kura-systems/"><img src="/static/img/linkedinimage.png" alt=""></a>
 
 								
 							
@@ -1026,7 +1030,7 @@
 							<ul class="site-footer_newsletter-list">
 								<li><a href="#">Privacy</a></li>
 								<li><a href="#">Terms of Use</a></li>
-								<li><a href=" http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India"">Go To Map</a></li>
+								<li><a href= "http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
 							</ul>
 						</div>
 
@@ -1034,14 +1038,14 @@
 				</div>
 			</div>
 
-			<!-- Site Footer Bottom -->
+			
 			<div class="site-footer__bottom">
 				<div class="container">
 					<div class="row clearfix">
 						<div class="col-lg-4 col-md-12 col-sm-12">
 							<!-- Logo Box -->
 							<div class="site-footer__bottom-logo">
-								<a href="index.html"><img src="img/kura card.png" alt=""
+								<a href="index.html"><img src="/static/img/kura card.png" alt=""
 										title=""></a>
 							</div>
 						</div>
@@ -1050,14 +1054,14 @@
 							<div class="site-footer__copyright">&copy; 2022 Kura Systems. All Rights Reserved</div>
 						</div>
 						<!-- Column -->
-						<!-- <div class="col-lg-4 col-md-12 col-sm-12">
-							<ul class="site-footer__social-nav">
+						 <div class="col-lg-4 col-md-12 col-sm-12">
+							{% comment %} <ul class="site-footer__social-nav">
 								<li><a href="#">fb</a></li>
 								<li><a href="#">tw</a></li>
 								<li><a href="#">ig</a></li>
 								<li><a href="#">in</a></li>
-							</ul>
-						</div> -->
+							</ul> {% endcomment %}
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -1076,24 +1080,21 @@
 	<!-- Scroll To Top -->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
-	<script src="assets/vendors/jquery/jquery-v3.6.0.js"></script>
-	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-
-	<script src="assets/vendors/fancybox/js/jquery.fancybox.js"></script>
-	<script src="assets/vendors/jquery-appear/appear.js"></script>
-	<script src="assets/vendors/animate/js/parallax.min.js"></script>
-	<script src="assets/vendors/animate/js/tilt.jquery.min.js"></script>
-	<script src="assets/vendors/animate/js/jquery.paroller.min.js"></script>
-	<script src="assets/vendors/owl-slider/js/owl.js"></script>
-	<script src="assets/vendors/wow/js/wow.js"></script>
-	<script src="assets/vendors/validate/js/validate.js"></script>
-	<script src="assets/vendors/nav-tools/js/nav-tool.js"></script>
-	<script src="assets/vendors/jquery-ui/js/jquery-ui.js"></script>
-	<script src="assets/vendors/swiper/swiper.min.js"></script>
-
-	<!-- Template Js -->
-	<script src="assets/js/solapa-script.js"></script>
+	<script src="/static/assets/vendors/jquery/jquery-v3.6.0.js"></script>
+	<script src="/static/assets/vendors/bootstrap/js/popper.min.js"></script>
+	<script src="/static/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/static/assets/vendors/fancybox/js/jquery.fancybox.js"></script>
+	<script src="/static/assets/vendors/jquery-appear/appear.js"></script>
+	<script src="/static/assets/vendors/animate/js/parallax.min.js"></script>
+	<script src="/static/assets/vendors/animate/js/tilt.jquery.min.js"></script>
+	<script src="/static/assets/vendors/animate/js/jquery.paroller.min.js"></script>
+	<script src="/static/assets/vendors/owl-slider/js/owl.js"></script>
+	<script src="/static/assets/vendors/wow/js/wow.js"></script>
+	<script src="/static/assets/vendors/validate/js/validate.js"></script>
+	<script src="/static/assets/vendors/nav-tools/js/nav-tool.js"></script>
+	<script src="/static/assets/vendors/jquery-ui/js/jquery-ui.js"></script>
+	<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
+	<script src="/static/js/solapa-script.js"></script>
 
 
 
