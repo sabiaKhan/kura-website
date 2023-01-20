@@ -666,11 +666,11 @@
 					<div class="service-one__single col-lg-4 col-md-12 col-sm-12">
 						 <div class="service-one__single-inner wow fadeInLeft" data-wow-delay="0ms" 
 						 data-wow-duration="">
-							<img src="/media/{{n.product_image}}"  alt="" height="" class="img-fluid">
+							<img src="{{ n.product_image.url }}"  alt="" height="" class="img-fluid">
 							<!-- <span class="service-one__icon icon-renewable-energy"></span> -->
 							<h3 class="service-one__title"><a href="water saver.html"> {{n.product_name}} </a></h3>
 							 <div class="service-one__text">{{n.product_discription}} </div> 
-							<a href="water saver.html" class="service-one__read-more">Read More <span
+							<a href="{% url 'water_saver' %}" class="service-one__read-more">Read More <span
 									class="service-one__read-arrow icon-right-arrow"></span></a>
 						</div>
 					</div>
