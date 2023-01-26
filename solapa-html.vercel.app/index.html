@@ -345,12 +345,13 @@
 			"autoplay": {
 			"delay": 5000
 			}}'>
+			
 				<div class="swiper-wrapper">
 
 					<div class="swiper-slide">
 
 						<div class="image-layer"
-							style="background-image: url(https://img.freepik.com/premium-photo/solar-panel-with-sunset-background_34152-1258.jpg?w=2000);">
+							style="background-image: url(/static/img/productimage2.png);">
 						</div>
 						<!-- /.image-layer -->
 
@@ -388,11 +389,12 @@
 											</div>
 										</div>
 									</div>
+									
 									<div class="col-xl-7 col-lg-7">
 										<div class="main-slider__content-right">
 											<div class="main-slider__sub-title-box">
 												<div class="main-slider__sub-title-icon">
-													<img src="/static/img/kura card.png" alt="" style="height: 40px;">
+													<img src="/static/img/kuralogo.png" alt="" style="height: 40px;">
 												</div>
 
 												<p class="main-slider__sub-title">Our Product</p>
@@ -408,6 +410,7 @@
 											</div>
 										</div>
 									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -454,26 +457,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-xl-7 col-lg-7">
-										<div class="main-slider__content-right">
-											<div class="main-slider__sub-title-box">
-												<div class="main-slider__sub-title-icon">
-													<img src="/static/img/kura card.png" alt="">
-												</div>
-
-												<p class="main-slider__sub-title">Our Product</p>
-
-
-											</div>
-											<h3 class="main-slider__title">Sustainable Product For You
-											</h3>
-											<div class="main-slider__btn-box">
-												<a href="#" class="theme-btn btn-style-two"><span
-														class="txt">Get
-														Solution</span></a>
-											</div>
-										</div>
-									</div>
+									 
 								</div>
 							</div>
 						</div>
@@ -482,7 +466,7 @@
 					<div class="swiper-slide">
 
 						<div class="image-layer"
-							style="background-image: url(https://www.cnet.com/a/img/resize/f650e0c331f2c23467e9aa23c85683d017c52250/hub/2022/01/11/8699ad6e-2736-429b-ad0c-5567a0ba0686/rimac-nevera-1080p.jpg?auto=webp&fit=crop&height=528&width=940)">
+							style="background-image: url(/static/img/solar)">
 						</div>
 						<!-- /.image-layer -->
 
@@ -539,7 +523,7 @@
 														Solution</span></a>
 											</div>
 										</div>
-									</div>
+									</div>  
 								</div>
 							</div>
 						</div>
@@ -558,6 +542,7 @@
 				</div>
 
 			</div>
+			
 		</section>
 		<div style="height:200px;width:100%; text-align:center; margin-Bottom:10px;margin-top:20px">
 			<h1 style="text-align:center;margin-top:30px;margin-Bottom:30px;background:light-grey;"> partnership with UTL  <img src="/static/img/productimage2.png" alt="" height="40px;posion: absolute;"></h1>
@@ -802,22 +787,25 @@
 					}
 				}'>
 
-				
+				{% for n in subproductData %}
 					<div class="project-one__single">
+						
 						<div class="project-one__image">
-							<img src="/static/img/wateroverflowalarm.jpg" alt="" />
+							<img src="{{n.sub_product_image.url}}" alt="" />
 							<div class="project-one__overlay-box">
-								<div class="project-one__sub-title">Water saver</div>
-								<h3 class="project-one__title"><a href="over flow alarm.html">Over Flow Alarm</a></h3>
+								<div class="project-one__sub-title">{{n.sub_product_name}}</div>
+								<h3 class="project-one__title"><a href="over flow alarm.html">{{n.sub_product_discription}}</a></h3>
 								<a href="over flow alarm.html" class="project-one__arrow">
 									<span class="icon-right-arrow-1"></span>
 								</a>
 							</div>
 						</div>
 					</div>
+					{% endfor %}
+					
 
 		
-					<div class="project-one__single">
+				<!--	<div class="project-one__single">
 						<div class="project-one__image">
 							<img src="/static/img/waterlevelindicator.jpg" alt=""  style="height: 543px;"/>
 							<div class="project-one__overlay-box">
@@ -950,7 +938,7 @@
 								</a>
 							</div>
 						</div>
-					</div>
+					</div>-->
 
 				</div>
 			</div>
