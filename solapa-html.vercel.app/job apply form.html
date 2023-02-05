@@ -325,244 +325,198 @@
 			<!-- End Mobile Menu -->
 
 		</header>
-		<!-- End Main Header -->
 
-		<!-- Page Title -->
-		<section class="page-title" style="background-image: url(https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=)">
-			<div class="container">
-				<h1 class="page-main__title">Contact</h1>
-				<ul class="page__breadcrumb">
-					<li><a href="#">home</a></li>
-					<li>Contact</li>
-				</ul>
-			</div>
-		</section>
-		<!-- End Main Slider Section -->
+    <div class="col-md-6 offset-md-3 mt-5">
+      {% comment %} <a target="_blank" href="https://getform.io?ref=codepenHTML"> {% endcomment %}
+        
+      </a>
+      <br>
+      
+      <h1> Job Application Form</h1>
+      <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data" target="_blank">
+        <div class="form-group">
+          <label for="exampleInputName">Full Name</label>
+          <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Enter your name and surname" required="required">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" required="required">Email address</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" name="city" class="form-control" id="inputCity" placeholder="Istanbul">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" name="zip" class="form-control" id="inputZip" placeholder="34000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+          <div class="col-10">
+            <input class="form-control" name="tel" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="example-date-input" class="col-3 col-form-label">Start Date</label>
+          <div class="col-10">
+            <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label class="mr-4">Upload your CV:</label>
+          <input type="file" name="file">
+        </div>
+        <button type="submit" class="theme-btn btn-style-two" style="margin-top:20px;">Submit</button>
+      </form>
+    </div>
+	
+    <footer class="site-footer" style="margin-top:30px;">
+        <div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
+        </div>
+        <div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
+        </div>
+        <div class="container">
+            <!-- Site Footer Middle -->
+            <div class="site-footer__middle">
+                <div class="row clearfix">
 
-		<!-- Contact One -->
-		<section class="contact-one">
-			<div class="container">
-				<div class="row clearfix">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<h2 class="contact-one__title">Feel free to ask questions or share your message with us.</h2>
-						<div class="contact-one__text">You can also reach out to us by phone or email are many
-							variations</div>
-						<ul class="contact-one__info">
-							<li>
-								<span class="icon icon-location"></span>
-								Address
-								<p>1/12 Vikash Deep Jaidev
-									Park,Punjabi Bagh East,New Delhi-26 India</p>
-							</li>
-							<li>
-								<span class="icon icon-phone"></span>
-								Phone
-								<p> +91-8882812100<br> </p>
-							</li>
-							<li>
-								<span class="icon icon-email"></span>
-								Email Address
-								<p><a href="mailto:Info@kurasystems.com	" >Info@kurasystems.com	 <br> Info@kurasystems.com			</a></p>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-8 col-md-12 col-sm-12">
-						<div class="contact-one__form-box">
+                    <!-- Footer Widget Column -->
+                    <div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
+                        <h3 class="footer-widget__title">About</h3>
+                        <div class="site-footer__about-text"><ul class="footer-widget__links-list">
+                                
+                            <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="about.html">Our History</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="footer-contact__list">
+                                    <li><span class="icon icon-location"></span>
+                                        <li><span class="icon icon-location"></span>1/12 Vikash Deep Jaidev
+                                            Park,Punjabi Bagh East,New Delhi-26 India
+                                        </li>
+                                    <li><span class="icon icon-email"></span>Info@kurasystems.com</li>
+                                </ul>
+                            </div>
+    
+                            <div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
+                                <h3 class="footer-widget__title">Product </h3>
+                                <ul class="footer-widget__links-list">
+                                    <li><a href="water saver.html">Water Saver</a></li>
+                                    <li><a href="solar.html">Solar</a></li>
+                                    <li><a href="Electrical vehical.html">Electric Whecle Chargers</a></li>
+                                    <li><a href="#">BLDC Solutions</a></li>
+                                    <!-- <li><a href="#">Heavy Equipment</a></li>
+                                    <li><a href="#">Green Energy</a></li> -->
+                                </ul>
+                            </div>
+    
+                            <div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
+                                <h3 class="footer-widget__title">Support</h3>
+                                <ul class="footer-widget__links-list">
+                                    <li><a href="#">Forum </a></li>
+                                    <li><a href="#">Help & FAQ</a></li>
+                                    <li><a href="#">Downloads</a></li>
+                                    <li><a href="#">Get A Call  Back</a></li>
+                                    
+                                </ul>
+                            </div>
 
-							<h2 class="contact-one__title-two">Send Us Message</h2>
-							<div class="contact-one__text-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Ut <br> blandit arcu in pretium ratione voluptatem sequi</div>
-							<!-- Contact Form -->
-							<div class="contact-form">
-								<!-- Contact Form -->
-								<form method="post" action="" id="contact-form">
-									<div class="row clearfix">
-										<div class="form-group col-lg-6 col-md-6 col-sm-12">
-											<input type="text" name="name" placeholder="Full Name">
-										</div>
+                    <div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
+                        <h3 class="footer-widget__title">follow Us</h3>
 
-										<div class="form-group col-lg-6 col-md-6 col-sm-12">
-											<input type="email" name="email" placeholder="Email Address">
-										</div>
+                        <ul class="icon-social" >
 
-										<div class="form-group col-lg-6 col-md-6 col-sm-12">
-											<input type="text" name="phone" placeholder="Phone">
-										</div>
+                            <!-- <li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li> -->
+                            <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/facebook.png" alt=""></a>
+                  <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/insta.png" alt=""></a>
+                  <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="/static/img/youtube.png"
+                      alt=""></a>
+                  <a href="https://www.linkedin.com/company/kura-systems/"><img src="/static/img/linkedinimage.png" alt=""></a>
 
-										<div class="form-group col-lg-6 col-md-6 col-sm-12">
-											<input type="text" name="subject" placeholder="Subject">
-										</div>
+                            
+                        
+                        </ul>
+                        <div class="site-footer__newsletter-text">Contact With me feel free to ask.
+                            .</div>
+                        <!-- Newsletter Form -->
+                        <form class="footer-widget__newsletter-form">
+                            <div class="footer-widget__newsletter-input-box">
+                                <input type="email" placeholder="Email Address" name="email">
+                                <button type="submit" class="footer-widget__newsletter-btn">Submit</button>
+                            </div>
+                        </form>
+                        <ul class="site-footer_newsletter-list">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href=" http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
+                        </ul>
+                    </div>
 
-										<div class="form-group">
-											<textarea name="message" placeholder="Your Message Here"></textarea>
-										</div>
+                </div>
+            </div>
+        </div>
 
-										<div class="form-group">
-											<button type="submit" class="theme-btn btn-style-two"><span class="txt">Send
-													Message</span></button>
-										</div>
-									</div>
-								</form>
-								<!-- End Contact Form -->
-							</div>
+        <!-- Site Footer Bottom -->
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <!-- Logo Box -->
+                        <div class="site-footer__bottom-logo">
+                            <a href="index.html"><img src="/static/img/kura card.png" alt=""
+                                    title=""></a>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="site-footer__copyright">&copy; 2022 Kura Systems. All Rights Reserved</div>
+                    </div>
+                    <!-- Column -->
+                    <!-- <div class="col-lg-4 col-md-12 col-sm-12">
+                        <ul class="site-footer__social-nav">
+                            <li><a href="#">fb</a></li>
+                            <li><a href="#">tw</a></li>
+                            <li><a href="#">ig</a></li>
+                            <li><a href="#">in</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Contact One -->
+    </footer>
 
-		<!-- Contact Map -->
-		<!-- <section class="contact-map">
-			<iframe
-				src=" https://www.google.com/maps/search/1%2F12+Vikash+Deep+Jaidev+Park,+Punjabi+Bagh+East,+New+Delhi+-26+India/@28.6703318,77.1493542,18z/data=!3m1!4b1"
-				allowfullscreen=""></iframe>
-		</section> -->
-		<!-- End Contact Map -->
+</div>
+<!-- End PageWrapper -->
 
-		<!-- Site Footer Start -->
-		<footer class="site-footer">
-			<div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
-			</div>
-			<div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
-			</div>
-			<div class="container">
-				<!-- Site Footer Middle -->
-				<div class="site-footer__middle">
-					<div class="row clearfix">
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
-						<!-- Footer Widget Column -->
-						<div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
-							<h3 class="footer-widget__title">About</h3>
-							<div class="site-footer__about-text"><ul class="footer-widget__links-list">
-									
-								<li><a href="about.html">About Us</a></li>
-										<li><a href="#">Team</a></li>
-										<li><a href="#">FAQ's</a></li>
-										<li><a href="about.html">Our History</a></li>
-										</ul>
-									</div>
-									<ul class="footer-contact__list">
-										<li><span class="icon icon-location"></span>
-											<li><span class="icon icon-location"></span>1/12 Vikash Deep Jaidev
-												Park,Punjabi Bagh East,New Delhi-26 India
-											</li>
-										<li><span class="icon icon-email"></span>Info@kurasystems.com</li>
-									</ul>
-								</div>
-		
-								<div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
-									<h3 class="footer-widget__title">Product </h3>
-									<ul class="footer-widget__links-list">
-										<li><a href="water saver.html">Water Saver</a></li>
-										<li><a href="solar.html">Solar</a></li>
-										<li><a href="Electrical vehical.html">Electric Whecle Chargers</a></li>
-										<li><a href="#">BLDC Solutions</a></li>
-										<!-- <li><a href="#">Heavy Equipment</a></li>
-										<li><a href="#">Green Energy</a></li> -->
-									</ul>
-								</div>
-		
-								<div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
-									<h3 class="footer-widget__title">Support</h3>
-									<ul class="footer-widget__links-list">
-										<li><a href="#">Forum </a></li>
-										<li><a href="#">Help & FAQ</a></li>
-										<li><a href="#">Downloads</a></li>
-										<li><a href="#">Get A Call  Back</a></li>
-										
-									</ul>
-								</div>
-
-						<div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
-							<h3 class="footer-widget__title">follow Us</h3>
-
-							<ul class="icon-social" >
-
-								<!-- <li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
-								<li><a href="#" class="fa fa-twitter"></a></li>
-								<li><a href="#" class="fab fa-instagram"></a></li> -->
-								<a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/facebook.png" alt=""></a>
-                      <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/insta.png" alt=""></a>
-                      <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="/static/img/youtube.png"
-                          alt=""></a>
-                      <a href="https://www.linkedin.com/company/kura-systems/"><img src="/static/img/linkedinimage.png" alt=""></a>
-
-								
-							
-							</ul>
-							<div class="site-footer__newsletter-text">Contact With me feel free to ask.
-								.</div>
-							<!-- Newsletter Form -->
-							<form class="footer-widget__newsletter-form">
-								<div class="footer-widget__newsletter-input-box">
-									<input type="email" placeholder="Email Address" name="email">
-									<button type="submit" class="footer-widget__newsletter-btn">Submit</button>
-								</div>
-							</form>
-							<ul class="site-footer_newsletter-list">
-								<li><a href="#">Privacy</a></li>
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href=" http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<!-- Site Footer Bottom -->
-			<div class="site-footer__bottom">
-				<div class="container">
-					<div class="row clearfix">
-						<div class="col-lg-4 col-md-12 col-sm-12">
-							<!-- Logo Box -->
-							<div class="site-footer__bottom-logo">
-								<a href="index.html"><img src="/static/img/kura card.png" alt=""
-										title=""></a>
-							</div>
-						</div>
-						<!-- Column -->
-						<div class="col-lg-4 col-md-12 col-sm-12">
-							<div class="site-footer__copyright">&copy; 2022 Kura Systems. All Rights Reserved</div>
-						</div>
-						<!-- Column -->
-						<!-- <div class="col-lg-4 col-md-12 col-sm-12">
-							<ul class="site-footer__social-nav">
-								<li><a href="#">fb</a></li>
-								<li><a href="#">tw</a></li>
-								<li><a href="#">ig</a></li>
-								<li><a href="#">in</a></li>
-							</ul>
-						</div> -->
-					</div>
-				</div>
-			</div>
-
-		</footer>
-
-	</div>
-	<!-- End PageWrapper -->
-
-	<!-- Scroll To Top -->
-	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
-
-	<script src="/static/assets/vendors/jquery/jquery-v3.6.0.js"></script>
-	<script src="/static/assets/vendors/bootstrap/js/popper.min.js"></script>
-	<script src="/static/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/static/assets/vendors/fancybox/js/jquery.fancybox.js"></script>
-	<script src="/static/assets/vendors/jquery-appear/appear.js"></script>
-	<script src="/static/assets/vendors/animate/js/parallax.min.js"></script>
-	<script src="/static/assets/vendors/animate/js/tilt.jquery.min.js"></script>
-	<script src="/static/assets/vendors/animate/js/jquery.paroller.min.js"></script>
-	<script src="/static/assets/vendors/owl-slider/js/owl.js"></script>
-	<script src="/static/assets/vendors/wow/js/wow.js"></script>
-	<script src="/static/assets/vendors/validate/js/validate.js"></script>
-	<script src="/static/assets/vendors/nav-tools/js/nav-tool.js"></script>
-	<script src="/static/assets/vendors/jquery-ui/js/jquery-ui.js"></script>
-	<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
-	<script src="/static/js/solapa-script.js"></script>
+<script src="/static/assets/vendors/jquery/jquery-v3.6.0.js"></script>
+<script src="/static/assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="/static/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/assets/vendors/fancybox/js/jquery.fancybox.js"></script>
+<script src="/static/assets/vendors/jquery-appear/appear.js"></script>
+<script src="/static/assets/vendors/animate/js/parallax.min.js"></script>
+<script src="/static/assets/vendors/animate/js/tilt.jquery.min.js"></script>
+<script src="/static/assets/vendors/animate/js/jquery.paroller.min.js"></script>
+<script src="/static/assets/vendors/owl-slider/js/owl.js"></script>
+<script src="/static/assets/vendors/wow/js/wow.js"></script>
+<script src="/static/assets/vendors/validate/js/validate.js"></script>
+<script src="/static/assets/vendors/nav-tools/js/nav-tool.js"></script>
+<script src="/static/assets/vendors/jquery-ui/js/jquery-ui.js"></script>
+<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
+<script src="/static/js/solapa-script.js"></script>
 
 </body>
 
@@ -570,3 +524,4 @@
 
 
 </html>
+  

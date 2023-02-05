@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Kura Systems</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'try.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">
 
  
 	<link href="{% static 'assets/vendors/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
@@ -186,7 +186,7 @@
 
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="main-menu__navigation">
-										<li class="dropdown"><a href="index.html">Home</a>
+										<li class="dropdown"><a href="{% url 'home' %}">Home</a>
 											<!-- <ul>
 												<li><a href="index.html">HomePage 01</a></li>
 												<li><a href="index-2.html">HomePage 02</a></li>
@@ -200,20 +200,20 @@
 												</li>
 											</ul> -->
 										</li>
-										<li class="dropdown"><a href="#">About</a>
+										<li class="dropdown"><a href="">About</a>
 											<ul>
-												<li><a href="about.html">About us</a></li>
+												<li><a href="{% url 'about' %}">About us</a></li>
 												<li><a href="#">Team</a></li>
 												<li><a href="#">Faq's</a></li>
-												<li><a href="#">Our History</a></li>
+												<li><a href="{% url 'about' %}">Our History</a></li>
 											</ul>
 										</li>
 										<li class="dropdown"><a href="#">Product</a>
 											<ul>
-												<li><a href="water saver.html">Water Saver</a></li>
-												<li><a href="solar.html">Solar </a></li>
-												<li><a href="Electrical vehical.html">Electric Whecle Chargers</a></li>
-												<li><a href="#">BLDC Solutions</a></li>
+												<li><a href="{% url 'water-saver' %}">Water Saver</a></li>
+												<li><a href="{% url 'solar' %}">Solar </a></li>
+												<li><a href="{% url 'ev' %}">Electric Whecle Chargers</a></li>
+												<li><a href="{% url 'bldc_solution' %}">BLDC Solutions</a></li>
 
 											</ul>
 										</li>
@@ -233,9 +233,9 @@
 												<li><a href="not-found.html">Not Found</a></li>
 											</ul>
 										</li> -->
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="{% url 'contact' %}">Contact</a></li>
 										<li><a href="#">Warranty Registeration</a></li>
-                                        <li><a href="career.html">Career</a></li>
+                                        <li><a href="{% url 'career' %}">Career</a></li>
 									</ul>
 								</div>
 
@@ -533,54 +533,52 @@
 								also happen that the motor coil burns due to absence of water in the
 								sump.
 								Here We come with water overflow alarms that acknowledge you when tanks
-								filled completly"				
-												
-												
-												
-												
-							</p>
-							
-							
-							
-							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
+								filled completly"</p>
+								<a href="{% url 'overflowalarm' %}" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
 						</div>
 					
 						<div class="container-xl">
-							<div class="row" style="margin-top:20px;position:relative">
+							<div class="row" >
 								<div class="col-md-12">
-									
-									
 									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 									
-									<!-- Carousel indicators -->
-									   
-									<!-- Wrapper for carousel items -->
+								
 									<div class="carousel-inner">
+										
 										<div class="item carousel-item active">
 											<div class="row" style="justify-content:space-around">
+												{% for n in  water_over_flowsData %}
 												<div class="col-sm-2">
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
-															<h4>0FA-99</h4>									
+															<h4>{{n.product_name}}</h4>									
 															
 															
 															<a href="#" class="btn btn-primary" >Add to Cart</a>
 														</div>						
 													</div>
 												</div>
+												{% endfor %}
 																				
 												
 											</div>
+														</div>						
+											</div>
+														</div>						
+													</div>
+														</div>						
+											</div>
+												</div>		
+											</div>
 										</div>
 										
+										
 									</div>
-									<!-- Carousel controls -->
-									
-								</div>
+								</div>						
 							</div>
 						</div>
 					</div>			
@@ -592,7 +590,7 @@
 				<div class="card-body" >
 					<h3 class="card-title">Water Level Indicator</h3>
 					<h6 class="card-subtitle"></h6>
-					<div class="row" style="justify-content:space-around">
+					<div class="row" >
 						<div class="col-lg-5 col-md-3 col-sm-6">
 							<div class="white-box text-center"><img src="/static/img/waterlevelindicator.jpg" style="height:300px;width:150px"
 									class="img-responsive"></div>
@@ -609,98 +607,59 @@
 							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
 						</div>
 						<div class="container-xl">
-							<div class="row" style="margin-top:20px;position:relative">
+							<div class="row" >
 								<div class="col-md-12">
-									
 									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-									<!-- Carousel indicators -->
-									   
-									<!-- Wrapper for carousel items -->
+									
+								
 									<div class="carousel-inner">
+										
 										<div class="item carousel-item active">
-											<div class="row"style="justify-content:space-around">
+											<div class="row" style="justify-content:space-around">
+												{% for n in  water_level_indicatorsData %}
 												<div class="col-sm-2">
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
-															<h4>DL1-5</h4>									
+															<h4>{{n.product_name}}</h4>									
 															
 															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
+															<a href="#" class="btn btn-primary" >Add to Cart</a>
 														</div>						
 													</div>
 												</div>
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
-														</div>
-														<div class="thumb-content">
-															<h4>DL1-100</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>		
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
-														</div>
-														<div class="thumb-content">
-															<h4>DL1-100W</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
-														</div>
-														<div class="thumb-content">
-															<h4>ILI-100W</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
-														</div>
-														<div class="thumb-content">
-															<h4>GLI-100A</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>												
+												{% endfor %}
+																				
 												
+											</div>
+														</div>						
+											</div>
+														</div>						
+													</div>
+														</div>						
+											</div>
+												</div>		
 											</div>
 										</div>
 										
+										
 									</div>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>						
+									</div>
+									
 									<!-- Carousel controls -->
 									
-								
-			
 								</div>
 							</div>
-						</div>
+							
+						</div>		
 					</div>
 				</div>
 			</div>
@@ -727,107 +686,66 @@
 								by stoping tank overflow.
 								these devices are Long-lasting; once installed, it can last up to 15 years.
 								Indicates the amount of water in any form of a storage tank or liquid body."				
-												
-												
-												
-												
-												</p>
+									</p>
 							
 							
 							
 							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
 						</div>
 						<div class="container-xl">
-							<div class="row" style="margin-top:20px;position:relative">
+							
+							<div class="row" >
 								<div class="col-md-12">
 									
+									
+									
 									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+									
 									<!-- Carousel indicators -->
 									   
 									<!-- Wrapper for carousel items -->
+									
 									<div class="carousel-inner">
+										
 										<div class="item carousel-item active">
-											<div class="row" Style="justify-content:space-around;">
+											<div class="row" style="justify-content:space-around">
+												{% for n in  water_level_controllersData %}
 												<div class="col-sm-2">
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
-															<h4>WLC-PRO</h4>									
+															<h4>{{n.product_name}}</h4>									
 															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
+															<!--<p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>-->
+															<a href="#" class="btn btn-primary" >Add to Cart</a>
 														</div>						
 													</div>
 												</div>
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
-														</div>
-														<div class="thumb-content">
-															<h4>WLC-SUB-PRO</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>		
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
-														</div>
-														<div class="thumb-content">
-															<h4>WLC-DIGITAL</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
-														</div>
-														<div class="thumb-content">
-															<h4>WLC-SEMI</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>	
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
-														</div>
-														<div class="thumb-content">
-															<h4>WLC-RTS</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>									
+												{% endfor %}
+																				
 												
+											</div>
+														</div>						
+											</div>
+														</div>						
+													</div>
+														</div>						
+											</div>
+												</div>	
 											</div>
 										</div>
 										
+										
 									</div>
+									
 									<!-- Carousel controls -->
 									
 								</div>
-								</div>
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -864,81 +782,47 @@
 							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
 						</div>
 						<div class="container-xl">
-							<div class="row" style="margin-top:20px;position:relative">
+							<div class="row" >
 								<div class="col-md-12">
-									
 									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-									<!-- Carousel indicators -->
-									   
-									<!-- Wrapper for carousel items -->
+									
+								
 									<div class="carousel-inner">
+										
 										<div class="item carousel-item active">
 											<div class="row" style="justify-content:space-around">
-												<div class="col-sm-2">
+												{% for n in  submersible_starterssData %}
+												<div class="col-sm-3">
 													<div class="thumb-wrapper">
 														
 														<div class="img-box">
-															<img src="/static/img/waterlevelcontroller.jpg"  style= class="img-fluid" alt="">									
+															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
 														</div>
 														<div class="thumb-content">
-															<h3>DCS-5R</h3>									
+															<h4>{{n.product_name}}</h4>									
 															
 															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
+															<a href="#" class="btn btn-primary" >Add to Cart</a>
 														</div>						
 													</div>
 												</div>
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/productimage4.png" class="img-fluid" alt="Headphone">
-														</div>
-														<div class="thumb-content">
-															<h4>SCS-5</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>		
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
-														</div>
-														<div class="thumb-content">
-															<h4>DCS-5C</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>		
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="/static/img/waterlevelindicator.jpg" class="img-fluid" alt="Macbook">
-														</div>
-														<div class="thumb-content">
-															<h4>TPS-5</h4>									
-															
-															
-															<a href="#" class="btn btn-primary">Add to Cart</a>
-														</div>						
-													</div>
-												</div>								
+												{% endfor %}
+																				
 												
+											</div>
+														</div>						
+											</div>
+														</div>						
+													</div>
+														</div>						
+											</div>
+												</div>		
 											</div>
 										</div>
 										
+										
 									</div>
-									<!-- Carousel controls -->
-									
-								</div>
-								</div>
+								</div>						
 							</div>
 						</div>
 					</div>
@@ -1092,6 +976,7 @@
 	<script src="/static/assets/vendors/nav-tools/js/nav-tool.js"></script>
 	<script src="/static/assets/vendors/jquery-ui/js/jquery-ui.js"></script>
 	<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="/static/js/solapa-script.js"></script>
 
 
@@ -1099,6 +984,6 @@
 </body>
 
 
-<!-- Mirrored from solapa-html.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 12:09:53 GMT -->
+
 
 </html>
