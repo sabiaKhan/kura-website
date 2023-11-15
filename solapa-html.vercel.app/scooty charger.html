@@ -767,9 +767,9 @@
     </section>
 
     <footer class="site-footer" style="margin-top: 20px;">
-        <div class="site-footer__shape-one" style="background-image: url(assets/images/shapes/footer-shape-1.png)">
+        <div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
         </div>
-        <div class="site-footer__shape-two" style="background-image: url(assets/images/shapes/footer-shape-1.png)">
+        <div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
         </div>
         <div class="container">
             <!-- Site Footer Middle -->
@@ -777,23 +777,23 @@
                 <div class="row clearfix">
 
                     <!-- Footer Widget Column -->
-                    <div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget__column col-lg-4 col-md-6 col-sm-8">
                         <h3 class="footer-widget__title">About</h3>
                         <div class="site-footer__about-text"><ul class="footer-widget__links-list">
-									
+                                
                             <li><a href="about.html">About Us</a></li>
                                     <li><a href="#">Team</a></li>
                                     <li><a href="#">FAQ's</a></li>
                                     <li><a href="about.html">Our History</a></li>
                                     </ul>
                                 </div>
-                                <ul class="footer-contact__list">
+                                <!-- <ul class="footer-contact__list">
                                     <li><span class="icon icon-location"></span>
                                         <li><span class="icon icon-location"></span>1/12 Vikash Deep Jaidev
                                             Park,Punjabi Bagh East,New Delhi-26 India
                                         </li>
                                     <li><span class="icon icon-email"></span>Info@kurasystems.com</li>
-                                </ul>
+                                </ul> -->
                             </div>
     
                             <div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
@@ -822,20 +822,20 @@
                     <div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
                         <h3 class="footer-widget__title">follow Us</h3>
 
-							<ul class="icon-social" >
+                        <ul class="icon-social" >
 
-								<!-- <li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
-								<li><a href="#" class="fa fa-twitter"></a></li>
-								<li><a href="#" class="fab fa-instagram"></a></li> -->
-								<a href="https://www.facebook.com/SmartKSPL"><img src="./img/facebook.png" alt=""></a>
-                      <a href="https://www.facebook.com/SmartKSPL"><img src="./img/insta.png" alt=""></a>
-                      <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="./img/youtube.png"
-                          alt=""></a>
-                      <a href="https://www.linkedin.com/company/kura-systems/"><img src="./img/linkedinimage.png" alt=""></a>
+                            <!-- <li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li> -->
+                            <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/facebook.png" alt=""></a>
+                  <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/insta.png" alt=""></a>
+                  <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="/static/img/youtube.png"
+                      alt=""></a>
+                  <a href="https://www.linkedin.com/company/kura-systems/"><img src="/static/img/linkedinimage.png" alt=""></a>
 
-								
-							
-							</ul>
+                            
+                        
+                        </ul>
                         <div class="site-footer__newsletter-text">Contact With me feel free to ask.
                             .</div>
                         <!-- Newsletter Form -->
@@ -848,7 +848,7 @@
                         <ul class="site-footer_newsletter-list">
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Terms of Use</a></li>
-                            <li><a href=" http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
+                            <li><a href= "http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
                         </ul>
                     </div>
 
@@ -856,14 +856,15 @@
             </div>
         </div>
 
-        <!-- Site Footer Bottom -->
+        
         <div class="site-footer__bottom">
             <div class="container">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <!-- Logo Box -->
                         <div class="site-footer__bottom-logo">
-                            <a href="#"><img src="img/kura card.png" alt="" title=""></a>
+                            <a href="index.html"><img src="/static/img/kura card.png" alt=""
+                                    title=""></a>
                         </div>
                     </div>
                     <!-- Column -->
@@ -871,14 +872,14 @@
                         <div class="site-footer__copyright">&copy; 2022 Kura Systems. All Rights Reserved</div>
                     </div>
                     <!-- Column -->
-                    <!-- <div class="col-lg-4 col-md-12 col-sm-12">
-							<ul class="site-footer__social-nav">
-								<li><a href="#">fb</a></li>
-								<li><a href="#">tw</a></li>
-								<li><a href="#">ig</a></li>
-								<li><a href="#">in</a></li>
-							</ul>
-						</div> -->
+                     <div class="col-lg-4 col-md-12 col-sm-12">
+                        {% comment %} <ul class="site-footer__social-nav">
+                            <li><a href="#">fb</a></li>
+                            <li><a href="#">tw</a></li>
+                            <li><a href="#">ig</a></li>
+                            <li><a href="#">in</a></li>
+                        </ul> {% endcomment %}
+                    </div> 
                 </div>
             </div>
         </div>

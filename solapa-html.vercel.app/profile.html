@@ -241,426 +241,71 @@
 			<!-- End Mobile Menu -->
 
 		</header>
+       <section style="height: 500px;">
+		<div class="row" style=" margin-top: 50px; margin-left: 50px;">
+			<h3>Welcome to deshbord</h3>
+
 		
-	 <!-- End Preloader -->
+		<div class="col-sm-2 border-end">
+			<ul class="list-unstyled">
+				<li><div class="d-grid"><a href="{% url 'dashbord' %}" class="btn btn-primary" > Profile</a></div></li>
+				<li><div class="d-grid" style=" margin-top: 5px;"><a href="{% url 'address' %}" class="btn btn-primary" > Adreess</a></div></li>
 
-		<!-- Header Style One / Header Style Two -->
-		<!-- <header class="main-header header-style-two">
-
-			
-			<div class="main-header__upper">
-				<div class="container clearfix">
-
-					<div class="pull-left">
-				
-						<div class="main-header__logo-box">
-							<div class="main-header__logo"><a href="index.html"><img
-										src="img/kura card.png" alt="" title="" style="height: 30px;"></a></div>
-						</div>
-					
-						<ul class="main-header__contact-list">
-							<li>
-								<div class="icon icon-phone"></div>
-								<div class="text">
-									<p>Phone Number</p>
-									<h5><a href="tel:+88-5700-24-51">(88) 5700-24-51 Call</a></h5>
-								</div>
-							</li>
-							<li>
-								<div class="icon icon-email"></div>
-								<div class="text">
-									<p>For Email Send</p>
-									<h5><a href="mailto:helpus24@gmail.com">helpus24@gmail.com</a></h5>
-								</div>
-							</li>
-						</ul>
-					</div>
-
-					<div class="pull-right">
-
-						<div class="main-header-two__social">
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-skype"></i></a>
-						</div>
-
-
-						<div class="main-header__btn-box">
-							<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Contact
-									us</span></a>
-						</div>
-
-					</div>
+			</ul>
+		</div>
+		<div class="col-sm-8 offset-sm-1">
+			<form action="" method="post">
+				{% csrf_token %}
+				{% for fm in form %}
+				{{fm.label_tag}}{{fm}}<small class="text-danger">{{fm.errors|scripttage}}</small><br>
+				{% endfor %}
+				<div class="col-12 mt-3">
+					<button type=" submit" class=" btn btn-primary"> submit</button>
 
 				</div>
-			</div>
-
-			<!-- Header Lower -->
-			 
-			<!-- End Header Lower -->
-
-			<!-- Sticky Header  -->
-			
-
-			<!-- Mobile Menu  -->
-			
-			<!-- End Mobile Menu -->
-
-		
-		<!-- End Main Header -->
-
-		<!-- Page Title -->
-		<section class="page-title" style="background-image: url(https://media.istockphoto.com/id/488368309/photo/water-conservation-in-the-our-planet-usa.jpg?s=612x612&w=0&k=20&c=Gp8cHb-Shk7ytu4yGOtydiiBSTGQdoI5bpPaWlidq9w=)">
-			<div class="container">
-				<h1 class="page-main__title">Water Saver</h1>
-				<ul class="page__breadcrumb">
-					<li><a href="#"></a>Save Water</li>
-					<li> Save Life</li>
-				</ul>
-			</div>
-		</section>
-		<div style="height:50px;">
-			<h1 style="text-align:center;"><b> We offer a wide range of Water saving products to save water for future generations...</b></h2>
-
-		</div>
-		<!-- End Main Slider Section -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-
-		<!-- <div class="container">
-			<div class="card">
-				<div class="card-body">
-					<h3 class="card-title">Rounded Chair</h3>
-					<h6 class="card-subtitle">globe type chair for rest</h6>
-					<div class="row">
-						<div class="col-lg-5 col-md-5 col-sm-6">
-							<div class="white-box text-center"><img src="https://via.placeholder.com/430x600/00CED1/000000" class="img-responsive"></div>
-						</div>
-						<div class="col-lg-7 col-md-7 col-sm-6">
-							<h4 class="box-title mt-5">Product description</h4>
-							<p>Lorem Ipsum available,but the majority have suffered alteration in some form,by injected humour,or randomised words which don't look even slightly believable.but the majority have suffered alteration in some form,by injected humour</p>
-							<h2 class="mt-5">
-								$153<small class="text-success">(36%off)</small>
-							</h2>
-							<button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
-								<i class="fa fa-shopping-cart"></i>
-							</button>
-							<button class="btn btn-primary btn-rounded">Buy Now</button>
-							<h3 class="box-title mt-5">Key Highlights</h3>
-							<ul class="list-unstyled">
-								<li><i class="fa fa-check text-success"></i>Sturdy structure</li>
-								<li><i class="fa fa-check text-success"></i>Designed to foster easy portability</li>
-								<li><i class="fa fa-check text-success"></i>Perfect furniture to flaunt your wonderful collectibles</li>
-							</ul>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<h3 class="box-title mt-5">General Info</h3>
-							<div class="table-responsive">
-								<table class="table table-striped table-product">
-									<tbody>
-										<tr>
-											<td width="390">Brand</td>
-											<td>Stellar</td>
-										</tr>
-										<tr>
-											<td>Delivery Condition</td>
-											<td>Knock Down</td>
-										</tr>
-										<tr>
-											<td>Seat Lock Included</td>
-											<td>Yes</td>
-										</tr>
-										<tr>
-											<td>Type</td>
-											<td>Office Chair</td>
-										</tr>
-										<tr>
-											<td>Style</td>
-											<td>Contemporary&amp;Modern</td>
-										</tr>
-										<tr>
-											<td>Wheels Included</td>
-											<td>Yes</td>
-										</tr>
-										<tr>
-											<td>Upholstery Included</td>
-											<td>Yes</td>
-										</tr>
-										<tr>
-											<td>Upholstery Type</td>
-											<td>Cushion</td>
-										</tr>
-										<tr>
-											<td>Head Support</td>
-											<td>No</td>
-										</tr>
-										<tr>
-											<td>Suitable For</td>
-											<td>Study&amp;Home Office</td>
-										</tr>
-										<tr>
-											<td>Adjustable Height</td>
-											<td>Yes</td>
-										</tr>
-										<tr>
-											<td>Model Number</td>
-											<td>F01020701-00HT744A06</td>
-										</tr>
-										<tr>
-											<td>Armrest Included</td>
-											<td>Yes</td>
-										</tr>
-										<tr>
-											<td>Care Instructions</td>
-											<td>Handle With Care,Keep In Dry Place,Do Not Apply Any Chemical For Cleaning.</td>
-										</tr>
-										<tr>
-											<td>Finish Type</td>
-											<td>Matte</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+				{% if for.non_field_errors % }
+				{% for error in form.non_field_errors %}
+				<p class="alert alert-danger my-3">{{error}}</p>
+				{% endfor %}
+				{% endfor %}
+				{% if messages %}
+				{% for msg in messages %}
+				<div class="alter alert-danger-{{msg.tags}}" role="alert">
+					{{msg}}
 				</div>
-			</div>
-		</div> -->
-		
-	
-		
-		<div class="container-b" style="margin-top: 30px;">
-			<div class="card" >
-				<div class="card-body" >
-					<h3 class="card-title">Water Level Indicator</h3>
-					<h6 class="card-subtitle"></h6>
-					<div class="row" >
-						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="/static/img/waterlevelindicator.jpg" style="height:300px;width:150px"
-									class="img-responsive"></div>
-						</div>
-						<div class="col-lg-6 col-md-7 col-sm-3">
-						
-							<p>"A water level indicator is a simple device which helps us monitor real-time 
-								water level of the tank. It also alarms the user whenever there is need to turn On or 
-								Off the motor. Thereby it helps us to conserve water and Electricity. Whenever 
-								you think water wastage, think methods to check it.
-								Thus you always know how much water you have in your tank."				
-									</p>
-							
-							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
-						</div>
-						<div class="container-xl">
-							<div class="row" >
-								<div class="col-md-12">
-									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-									
-								
-									<div class="carousel-inner">
-										
-										<div class="item carousel-item active">
-											<div class="row" style="justify-content:space-around">
-												{% for n in  water_level_indicatorsData %}
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
-														</div>
-														<div class="thumb-content">
-															<h4>{{n.product_name}}</h4>									
-															
-															
-															<a href="#" class="btn btn-primary" >Add to Cart</a>
-														</div>						
-													</div>
-												</div>
-												{% endfor %}
-																				
-												
-										
-											</div>
-																		
-								
-										</div>
-										
-										
-									</div>
-								</div>						
-							</div>
-						</div>						
-					</div>
-				</div>						
-			</div>
+				{% endfor %}
+
+			</form>
+
 		</div>
 		
-	
-		<div class="container-c" style="margin-top: 30px;">
-			<div class="card">
-				<div class="card-body">
-					<h3 class="card-title">Water Level controller</h3>
-					<h6 class="card-subtitle"></h6>
-					<div class="row">
-						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="/static/img/waterlevelcontroller.jpg" style="height:300px;width:150px"
-									class="img-responsive"></div>
-						</div>
-						<div class="col-lg-6 col-md-7 col-sm-3">
-						
-							<p>"Water level controller is a plug-and-forget water management device that 
-								provides an excellent choice, particularly for homemakers who want to manage
-								 their water resources more effectively.
-								IT Functions Automatically, Conserves Energy, Saves Money, Conserves Water 
-								and needs Low-Maintenance. It helps to prevent seepage of the roof and walls
-								by stoping tank overflow.
-								these devices are Long-lasting; once installed, it can last up to 15 years.
-								Indicates the amount of water in any form of a storage tank or liquid body."				
-									</p>
-							
-							
-							
-							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
-						</div>
-						<div class="container-xl">
-							
-							<div class="row" >
-								<div class="col-md-12">
-									
-									
-									
-									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-									
-									<!-- Carousel indicators -->
-									   
-									<!-- Wrapper for carousel items -->
-									
-									<div class="carousel-inner">
-										
-										<div class="item carousel-item active">
-											<div class="row" style="justify-content:space-around">
-												{% for n in  water_level_controllersData %}
-												<div class="col-sm-2">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
-														</div>
-														<div class="thumb-content">
-															<h4>{{n.product_name}}</h4>									
-															
-															<!--<p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>-->
-															<a href="#" class="btn btn-primary" >Add to Cart</a>
-														</div>						
-													</div>
-												</div>
-												{% endfor %}
-																				
-												
-											</div>
-														</div>						
-											</div>
-														</div>						
-													</div>
-														</div>						
-											</div>
-												</div>	
-											</div>
-										</div>
-										
-										
-									</div>
-									
-									<!-- Carousel controls -->
-									
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="containe-d" style="margin-top: 30px;">
-			<div class="card">
-				<div class="card-body">
-					<h3 class="card-title">SUBMERSIBLE STARTER</h3>
-					<h6 class="card-subtitle"></h6>
-					<div class="row">
-						<div class="col-lg-5 col-md-3 col-sm-6">
-							<div class="white-box text-center"><img src="/static/img/submersible.png" style="height:300px;width:150px"
-									class="img-responsive"></div>
-						</div>
-						<div class="col-lg-6 col-md-5 col-sm-3">
-						
-							<p>"Water level controller is a plug-and-forget water management device that 
-								provides an excellent choice, particularly for homemakers who want to manage
-								 their water resources more effectively.
-								IT Functions Automatically, Conserves Energy, Saves Money, Conserves Water 
-								and needs Low-Maintenance. It helps to prevent seepage of the roof and walls
-								by stoping tank overflow.
-								these devices are Long-lasting; once installed, it can last up to 15 years.
-								Indicates the amount of water in any form of a storage tank or liquid body."				
-												
-												
-												
-												
-												</p>
-							
-							
-							
-							<a href="over flow alarm.html" class="theme-btn btn-style-two" style="margin-top:20px;">View More</a>
-						</div>
-						<div class="container-xl">
-							<div class="row" >
-								<div class="col-md-12">
-									<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-									
-								
-									<div class="carousel-inner">
-										
-										<div class="item carousel-item active">
-											<div class="row" style="justify-content:space-around">
-												{% for n in  submersible_starterssData %}
-												<div class="col-sm-3">
-													<div class="thumb-wrapper">
-														
-														<div class="img-box">
-															<img src="{{n.product_image.url}}"  style= class="img-fluid" alt="">									
-														</div>
-														<div class="thumb-content">
-															<h4>{{n.product_name}}</h4>									
-															
-															
-															<a href="#" class="btn btn-primary" >Add to Cart</a>
-														</div>						
-													</div>
-												</div>
-												{% endfor %}
-																				
-												
-											</div>
-														</div>						
-											</div>
-														</div>						
-													</div>
-														</div>						
-											</div>
-												</div>		
-											</div>
-										</div>
-										
-										
-									</div>
-								</div>						
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<footer class="site-footer" style="margin-top:20px;">
+	</div>
+	   </section>
+        
+                           
+                            
+                               
+                        
+                                        
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="site-footer">
 			<div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
 			</div>
 			<div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
@@ -671,7 +316,7 @@
 					<div class="row clearfix">
 
 						<!-- Footer Widget Column -->
-						<div class="footer-widget__column col-lg-4 col-md-6 col-sm-8">
+						<div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
 							<h3 class="footer-widget__title">About</h3>
 							<div class="site-footer__about-text"><ul class="footer-widget__links-list">
 									
@@ -681,13 +326,13 @@
 										<li><a href="about.html">Our History</a></li>
 										</ul>
 									</div>
-									<!-- <ul class="footer-contact__list">
+									<ul class="footer-contact__list">
 										<li><span class="icon icon-location"></span>
 											<li><span class="icon icon-location"></span>1/12 Vikash Deep Jaidev
 												Park,Punjabi Bagh East,New Delhi-26 India
 											</li>
 										<li><span class="icon icon-email"></span>Info@kurasystems.com</li>
-									</ul> -->
+									</ul>
 								</div>
 		
 								<div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
@@ -742,7 +387,7 @@
 							<ul class="site-footer_newsletter-list">
 								<li><a href="#">Privacy</a></li>
 								<li><a href="#">Terms of Use</a></li>
-								<li><a href= "http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
+								<li><a href=" http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
 							</ul>
 						</div>
 
@@ -750,7 +395,7 @@
 				</div>
 			</div>
 
-			
+			<!-- Site Footer Bottom -->
 			<div class="site-footer__bottom">
 				<div class="container">
 					<div class="row clearfix">
@@ -766,28 +411,22 @@
 							<div class="site-footer__copyright">&copy; 2022 Kura Systems. All Rights Reserved</div>
 						</div>
 						<!-- Column -->
-						 <div class="col-lg-4 col-md-12 col-sm-12">
-							{% comment %} <ul class="site-footer__social-nav">
+						<!-- <div class="col-lg-4 col-md-12 col-sm-12">
+							<ul class="site-footer__social-nav">
 								<li><a href="#">fb</a></li>
 								<li><a href="#">tw</a></li>
 								<li><a href="#">ig</a></li>
 								<li><a href="#">in</a></li>
-							</ul> {% endcomment %}
-						</div> 
+							</ul>
+						</div> -->
 					</div>
 				</div>
 			</div>
 
 		</footer>
 
-	
-
-	
-
-			
-		<!-- End PageWrapper -->
-
-	
+	</div>
+	<!-- End PageWrapper -->
 
 	<!-- Scroll To Top -->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
@@ -806,10 +445,7 @@
 	<script src="/static/assets/vendors/nav-tools/js/nav-tool.js"></script>
 	<script src="/static/assets/vendors/jquery-ui/js/jquery-ui.js"></script>
 	<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="/static/js/solapa-script.js"></script>
-
-
 
 </body>
 

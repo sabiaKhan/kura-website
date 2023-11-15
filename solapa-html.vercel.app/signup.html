@@ -1,0 +1,472 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Kura Systems</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">
+
+ 
+	<link href="{% static 'assets/vendors/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+	 <link href="{% static 'assets/vendors/fontawesome/css/font-awesome.css'  %}" rel="stylesheet">  
+	 <link href="{% static 'assets/vendors/flaticons/flaticon.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/animate/css/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/owl-slider/css/owl.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/icomoon-fonts/css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/jquery-ui/css/jquery-ui.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/animate/css/custom-animate.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/fancybox/css/jquery.fancybox.min.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendors/swiper/swiper.min.css' %}" rel="stylesheet">	
+	<!-- Catamaran Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Smooch Sans -->
+	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet"> 
+
+	 <!-- Favicons Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}" />
+	<link rel="icon" type="/image/png" sizes="32x32" href="{% static 'img/kuralogo.png' %}" />
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/kuralogo.png' %}" />
+	<link rel="manifest" href="{% static 'img/kura card.png' %}" />  
+
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+
+	<!-- <link href="{% static 'css/solapa.css' %}" rel="stylesheet">-->
+	 <!--<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">--> 
+
+ 
+	<link href="{% static 'css/solapa-responsive.css' %}" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{% static 'card style.css' %}"/>  
+	
+	<script>
+		$(document).ready(function(){
+			$(".wish-icon i").click(function(){
+				$(this).toggleClass("fa-heart fa-heart-o");
+			});
+		});	
+		</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+
+	
+
+		 
+		<div class="preloader">
+			<span></span>
+		</div>
+		<header class="main-header">
+
+			<!-- Header Top -->
+			<div class="main-header__top">
+				<div class="container clearfix" style="height: 52px; margin-top: -12px;">
+
+					<div class="pull-left">
+						<ul class="main-header__info">
+							<li><a href="contact.html"><span class="icon icon-location"></span>1/12 Vikash Deep Jaidev
+									Park,Punjabi Bagh East,New Delhi-26 India
+								</a></li>
+							<li>
+								<a href="mailto:Info@kurasystems.com">
+									<span
+										class="icon icon-email">
+									</span>
+									Info@kurasystems.com
+								</a>
+							</li>
+										
+										
+										<!-- <div class="main-header__button-box">
+											<img src="/static/img/what.png" style="height:25px ; margin-top: 2px; ">
+											<a href="https://api.whatsapp.com/send?phone=8882812100" class="theme-btn btn-style-three" style="height: 50px; "> <span class="txt" style="text-align: justify
+											; font-size:15px;position: relative; ">chat on Whatsapus</span></a>
+													
+										</div> -->
+										
+						</ul>
+					</div>
+					<div class="pull-right clearfix">
+						<div class="main-header__top-text" style="margin-top: -5px;">Warranty/Ragistrations and Complain</div>
+						<div class="main-header__top-estimate">
+							<img src="/static/img/what.png" style="height:25px ;margin-Bottom:30px">
+							<a href="https://api.whatsapp.com/send?phone=8882812100">Whatsapp US</a>
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+			<!-- Header Lower -->
+			<div class="main-header__lower">
+				<div class="container">
+					<div class="main-header__lower__inner clearfix" >
+
+						<!-- Logo Box -->
+						<div class="main-header__logo-box" style=
+						" position: relative;
+						z-index: 1;
+						float: left;
+						top: -1px;
+						margin-left: -30px;
+						padding: 0px 17px 0px;">
+							<div class="main-header__logo"><a href="#"><img src="/static/img/kuralogo.png"  alt=""
+										title=""></a></div>
+						</div>
+
+						<!-- Nav Outer -->
+						<div class="nav-outer clearfix">
+							<!-- Mobile Navigation Toggler -->
+							<div class="mobile-nav-toggler"><span class="icon fas fa-bars"></span></div>
+							<!-- Main Menu -->
+							<nav class="main-menu__menu-box navbar-expand-md">
+								<div class="navbar-header">
+									<!-- Toggle Button -->
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-collapse collapse clearfix" style="height: 50px !important;" id="navbarSupportedContent">
+									<ul class="main-menu__navigation" >
+										<li class="dropdown"><a href="{% url 'home' %}">Home</a>
+											
+										</li>
+										<li class="dropdown"><a href="">About</a>
+											<ul>
+												<li><a href="{% url 'about' %}">About us</a></li>
+												<li><a href="#">Team</a></li>
+												<li><a href="#">Faq's</a></li>
+												<li><a href="{% url 'about' %}">Our History</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="#">Product</a>
+											<ul>
+												<li><a href="{% url 'water-saver' %}">Water Saver</a></li>
+												<li><a href="{% url 'solar' %}">Solar </a></li>
+												<li><a href="{% url 'ev' %}">Electric Whecle Chargers</a></li>
+												<li><a href="{% url 'bldc_solution' %}">BLDC Solutions</a></li>
+
+											</ul>
+										</li>
+									
+										<li><a href="{% url 'contact' %}">Contact</a></li>
+										
+                                        <li><a href="{% url 'career' %}">Career</a></li>
+										<li><a class="main-header__phone-number" style="font-weight: 500;" href="tel:+91-8882812100" >+91-8882812100</a>
+
+										
+							</li>
+									</ul>
+								</div>
+
+							</nav>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Header Lower -->
+
+			<!-- Sticky Header  -->
+			<div class="sticky-header">
+				<div class="container clearfix">
+					<!-- Logo -->
+					<div class="sticky-header__logo pull-left">
+						<a href="#" title=""><img src="/static/img/kura card.png" alt=""
+								title="" style="height: 40px;"></a>
+					</div>
+					<!--Right Col-->
+					<div class="pull-right">
+
+						<!-- Main Menu -->
+						<nav class="main-menu__navigation">
+							<!--Keep This Empty / Menu will come through Javascript-->
+						</nav>
+						<!-- Main Menu End-->
+
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler"><span class="icon fas fa-bars"></span></div>
+
+					</div>
+				</div>
+			</div><!-- End Sticky Menu -->
+
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon fas fa-times"></span></div>
+
+				<nav class="mobile-menu__box">
+					<div class="mobile-menu__logo"><a href="#"><img src="/static/img/kuralogo.png" alt="" title=""></a>
+					</div>
+					<div class="mobile-menu__outer">
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
+
+					<!-- Contact List -->
+					<ul class="mobile-menu__contact-list">
+						<li><span class="icon fa fa-envelope"></span><a
+								href="mailto:Info@kurasystems.com">Info@kurasystems.com</a></li>
+						<li><span class="icon fa fa-phone"></span><a href="tel:+91-8882812100">+91-8882812100</a></li>
+					</ul>
+
+					<!-- Social Box -->
+					<ul class="mobile-menu__social">
+
+						<li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<li><a href="#" class="fa fa-instagram"></a></li>
+					</ul>
+
+				</nav>
+
+			</div>
+			<!-- End Mobile Menu -->
+
+		</header>
+<section class="vh-90" style="background-color:hsl(32, 94%, 51%); ">
+	<div class="container h-90" >
+		
+	  <div class="row d-flex justify-content-center align-items-center h-100">
+		<div class="col-lg-12 col-xl-11">
+		  <div class="card text-black" style="border-radius:25px; margin-top:5px; margin-Bottom:5px;">
+			<div class="card-body p-md-5">
+			  <div class="row justify-content-center"  >
+				
+				<div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+				  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+  
+				  <form class="mx-1 mx-md-4"  action="/ragistration/" method="POST"  >
+					{% csrf_token %}  
+					<div class="d-flex flex-row align-items-center mb-4">
+					  <i class=""></i>
+					  <div class="form-outline flex-fill mb-0">
+						<input name="username" type="text" id="form3Example1c" class="form-control" />
+						<label class="form-label" for="form3Example1c"name="username" placeholder="Enter Full Name">Enter Full Name</label>
+					  </div>
+					</div>
+					{% comment %} <div class="d-flex flex-row align-items-center mb-4">
+						<i class=""></i>
+						<div class="form-outline flex-fill mb-0">
+						  <input name="lastname" type="text" id="form3Example1c" class="form-control" />
+						  <label class="form-label" for="form3Example1c" name="lastname" >Last Name</label>
+						</div>
+					  </div> {% endcomment %}
+  
+					<div class="d-flex flex-row align-items-center mb-4">
+					  <i class=""></i>
+					  <div class="form-outline flex-fill mb-0">
+						<input name="email" type="email" id="form3Example3c" class="form-control" />
+						<label class="form-label" for="form3Example3c"name="email" >Your Email</label>
+					  </div>
+					</div>
+  
+					<div class="d-flex flex-row align-items-center mb-4">
+					  <i class=""></i>
+					  <div class="form-outline flex-fill mb-0">
+						<input type="password" name="password" id="form3Example4c" class="form-control" />
+						<label class="form-label" for="form3Example4c"name="password" >Password</label>
+					  </div>
+					</div>
+  
+					<div class="d-flex flex-row align-items-center mb-4">
+					  <i class=""></i>
+					  <div class="form-outline flex-fill mb-0">
+						<input name="password1" type="password" id="form3Example4cd" class="form-control" />
+						<label class="form-label" for="form3Example4cd" name="password1" >Repeat your password</label>
+					  </div>
+					</div>
+  
+					{% comment %} <div class="form-check d-flex justify-content-center mb-5">
+					  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+					  <label class="form-check-label" for="form2Example3">
+						I agree all statements in <a href="#!">Terms of service</a>
+					  </label>
+					</div> {% endcomment %}
+  
+					<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+					  <button type="submit" class="theme-btn btn-style-two">Register</button>
+					</div>
+  
+				  </form>
+  
+				</div>
+				<div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+  
+				  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+					class="img-fluid" alt="Sample image">
+  
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <footer class="site-footer" style="margin-top:30px;">
+	<div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
+	</div>
+	<div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
+	</div>
+	<div class="container">
+		<!-- Site Footer Middle -->
+		<div class="site-footer__middle">
+			<div class="row clearfix">
+
+				<!-- Footer Widget Column -->
+				<div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
+					<h3 class="footer-widget__title">About</h3>
+					<div class="site-footer__about-text"><ul class="footer-widget__links-list">
+							
+						<li><a href="about.html">About Us</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="about.html">Our History</a></li>
+								</ul>
+							</div>
+							<ul class="footer-contact__list">
+								<li><span class="icon icon-location"></span>
+									<li><span class="icon icon-location"></span>1/12 Vikash Deep Jaidev
+										Park,Punjabi Bagh East,New Delhi-26 India
+									</li>
+								<li><span class="icon icon-email"></span>Info@kurasystems.com</li>
+							</ul>
+						</div>
+
+						<div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
+							<h3 class="footer-widget__title">Product </h3>
+							<ul class="footer-widget__links-list">
+								<li><a href="water saver.html">Water Saver</a></li>
+								<li><a href="solar.html">Solar</a></li>
+								<li><a href="Electrical vehical.html">Electric Whecle Chargers</a></li>
+								<li><a href="#">BLDC Solutions</a></li>
+								<!-- <li><a href="#">Heavy Equipment</a></li>
+								<li><a href="#">Green Energy</a></li> -->
+							</ul>
+						</div>
+
+						<div class="footer-widget__column col-lg-2 col-md-6 col-sm-12">
+							<h3 class="footer-widget__title">Support</h3>
+							<ul class="footer-widget__links-list">
+								<li><a href="#">Forum </a></li>
+								<li><a href="#">Help & FAQ</a></li>
+								<li><a href="#">Downloads</a></li>
+								<li><a href="#">Get A Call  Back</a></li>
+								
+							</ul>
+						</div>
+
+				<div class="footer-widget__column col-lg-4 col-md-6 col-sm-12">
+					<h3 class="footer-widget__title">follow Us</h3>
+
+					<ul class="icon-social" >
+
+						<!-- <li><a href="https://www.facebook.com/SmartKSPL" class="fa fa-facebook-f"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fab fa-instagram"></a></li> -->
+						<a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/facebook.png" alt=""></a>
+			  <a href="https://www.facebook.com/SmartKSPL"><img src="/static/img/insta.png" alt=""></a>
+			  <a href="https://www.youtube.com/channel/UC_3Rc_BkPfA8CBHw6Fguc3w"><img src="/static/img/youtube.png"
+				  alt=""></a>
+			  <a href="https://www.linkedin.com/company/kura-systems/"><img src="/static/img/linkedinimage.png" alt=""></a>
+
+						
+					
+					</ul>
+					<div class="site-footer__newsletter-text">Contact With me feel free to ask.
+						.</div>
+					<!-- Newsletter Form -->
+					<form class="footer-widget__newsletter-form">
+						<div class="footer-widget__newsletter-input-box">
+							<input type="email" placeholder="Email Address" name="email">
+							<button type="submit" class="footer-widget__newsletter-btn">Submit</button>
+						</div>
+					</form>
+					<ul class="site-footer_newsletter-list">
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href=" http://maps.google.com/?q=1/12 Vikash Deep Jaidev Park, Punjabi Bagh East, New Delhi -26 India">Go To Map</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Site Footer Bottom -->
+	<div class="site-footer__bottom">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<!-- Logo Box -->
+					<div class="site-footer__bottom-logo">
+						<a href="index.html"><img src="/static/img/kura card.png" alt=""
+								title=""></a>
+					</div>
+				</div>
+				<!-- Column -->
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="site-footer__copyright">&copy; 2022 Kura Systems. All Rights Reserved</div>
+				</div>
+				<!-- Column -->
+				<!-- <div class="col-lg-4 col-md-12 col-sm-12">
+					<ul class="site-footer__social-nav">
+						<li><a href="#">fb</a></li>
+						<li><a href="#">tw</a></li>
+						<li><a href="#">ig</a></li>
+						<li><a href="#">in</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+</div>
+<!-- End PageWrapper -->
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+<script src="/static/assets/vendors/jquery/jquery-v3.6.0.js"></script>
+<script src="/static/assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="/static/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/assets/vendors/fancybox/js/jquery.fancybox.js"></script>
+<script src="/static/assets/vendors/jquery-appear/appear.js"></script>
+<script src="/static/assets/vendors/animate/js/parallax.min.js"></script>
+<script src="/static/assets/vendors/animate/js/tilt.jquery.min.js"></script>
+<script src="/static/assets/vendors/animate/js/jquery.paroller.min.js"></script>
+<script src="/static/assets/vendors/owl-slider/js/owl.js"></script>
+<script src="/static/assets/vendors/wow/js/wow.js"></script>
+<script src="/static/assets/vendors/validate/js/validate.js"></script>
+<script src="/static/assets/vendors/nav-tools/js/nav-tool.js"></script>
+<script src="/static/assets/vendors/jquery-ui/js/jquery-ui.js"></script>
+<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
+<script src="/static/js/solapa-script.js"></script>
+
+</body>
+
+
+
+
+</html>

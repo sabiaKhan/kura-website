@@ -5,19 +5,18 @@
 	<meta charset="utf-8">
 	<title>Kura Systems</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">
-
- 
-	<link href="{% static 'assets/vendors/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
-	 <link href="{% static 'assets/vendors/fontawesome/css/font-awesome.css'  %}" rel="stylesheet">  
-	 <link href="{% static 'assets/vendors/flaticons/flaticon.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/animate/css/animate.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/owl-slider/css/owl.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/icomoon-fonts/css/style.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/jquery-ui/css/jquery-ui.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/animate/css/custom-animate.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/fancybox/css/jquery.fancybox.min.css' %}" rel="stylesheet">
-	<link href="{% static 'assets/vendors/swiper/swiper.min.css' %}" rel="stylesheet">	
+	
+	<link href="/static/assets/vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="/static/assets/vendors/fontawesome/css/font-awesome.css" rel="stylesheet">
+	<link href="/static/assets/vendors/flaticons/flaticon.css" rel="stylesheet">
+	<link href="/static/assets/vendors/animate/css/animate.css" rel="stylesheet">
+	<link href="/static/assets/vendors/owl-slider/css/owl.css" rel="stylesheet">
+	<link href="/static/assets/vendors/icomoon-fonts/css/style.css" rel="stylesheet">
+	<link href="/static/assets/vendors/jquery-ui/css/jquery-ui.css" rel="stylesheet">
+	<link href="/static/assets/vendors/animate/css/custom-animate.css" rel="stylesheet">
+	<link href="/static/assets/vendors/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="/static/assets/vendors/swiper/swiper.min.css" rel="stylesheet">
+	
 	<!-- Catamaran Font -->
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&amp;display=swap"
 		rel="stylesheet">
@@ -30,37 +29,38 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}" />
 	<link rel="icon" type="/image/png" sizes="32x32" href="{% static 'img/kuralogo.png' %}" />
 	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/kuralogo.png' %}" />
-	<link rel="manifest" href="{% static 'img/kura card.png' %}" />  
+	<link rel="" href="{% static 'img/kura card.png' %}" />
+	<link rel="manifest" href="{% static 'images/favicons/site.html' %}" />  
 
 	<!-- Responsive -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+	
+
+	<!-- <link href="{% static 'css/solapa.css' %}" rel="stylesheet">-->
+	 <!--<link rel="stylesheet" type="text/css" href="{% static 'css/solapa.css' %}">--> 
+
  
-	<link href="{% static 'css/solapa-responsive.css' %}" rel="stylesheet">
+	<link href="{% static 'css/solapa-responsive.css'  %}" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="{% static 'card style.css' %}"/>  
-	
-	<script>
-		$(document).ready(function(){
-			$(".wish-icon i").click(function(){
-				$(this).toggleClass("fa-heart fa-heart-o");
-			});
-		});	
-		</script>
 
 </head>
 
 <body>
+
 	<div class="page-wrapper">
 
 	
 
-		 
+		<!-- Preloader -->
 		<div class="preloader">
 			<span></span>
 		</div>
+		<!-- End Preloader -->
+
+		<!-- Header Style One -->
 		<header class="main-header">
 
 			<!-- Header Top -->
@@ -162,25 +162,6 @@
 										<li><a href="{% url 'contact' %}">Contact</a></li>
 										
                                         <li><a href="{% url 'career' %}">Career</a></li>
-										<li><a href="{% url 'login_view' %}">Login</a></li>
-										<script>
-											// Assuming you have a variable 'isLoggedIn' that indicates the user's login status
-											var isLoggedIn = /* logic to determine user login status */
-										
-											// Function to update the login/logout link
-											function updateLoginLogoutLink() {
-												var linkElement = document.getElementById('loginLogoutLink');
-										
-												if (isLoggedIn) {
-													linkElement.innerHTML = <a href="{% url 'ragistration' %}">Logout</a>;
-												} else {
-													linkElement.innerHTML = <a href="{% url 'login_view' %}">Login</a>;
-												}
-											}
-										
-											// Call the function to set the initial state
-											updateLoginLogoutLink();
-										</script>
 										<li><a class="main-header__phone-number" style="font-weight: 500;" href="tel:+91-8882812100" >+91-8882812100</a>
 
 										
@@ -253,221 +234,97 @@
 			<!-- End Mobile Menu -->
 
 		</header>
-
-		<!-- End Main Header -->
-
-		<!--Main Slider Start-->
-		<section class="main-slider clearfix">
-			<div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-			"effect": "fade",
-			"pagination": {
-			"el": "#main-slider-pagination",
-			"type": "bullets",
-			"clickable": true
-			},
-			"navigation": {
-			"nextEl": "#main-slider__swiper-button-next",
-			"prevEl": "#main-slider__swiper-button-prev"
-			},
-			"autoplay": {
-			"delay": 5000
-			}}'>
-				<div class="swiper-wrapper">
-
-					<div class="swiper-slide" style="height: 400px;">
-
-						<div class="image-layer"
-							style="background-image: url(https://img.freepik.com/premium-photo/solar-panel-with-sunset-background_34152-1258.jpg?w=2000);">
-						</div>
-			
-						
-					</div>
+		<section class="vh-100">
+			<div class="container-fluid h-custom">
+			  <div class="row d-flex justify-content-center align-items-center h-100">
+				<div class="col-md-9 col-lg-6 col-xl-5">
+				  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+					class="img-fluid" alt="Sample image">
+				</div>
+				<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+			       
 					
-				</div>	
-			</div>
-			<!-- <div style="height:60px;width:100%; text-align:center; margin-Bottom:10px;margin-top:50px">
-				<h1 style="text-align:center;margin-top:-40px;margin-Bottom:30px;background:light-grey;"> partnership with  <img src="/static/img/UTL-Solar-Final-Logo.png" alt="" style=" height:85px;position: relative;"></h1>
-			</div> -->
-		</section>
-		<section class="service-one"  style="position: relative;
-		padding: 10px 0px 10px;">
-			<div class="container">
-				<div class="section-title centered" style="height: 30px;">
-					<h2 class="section-title__title", style="font-size: 35px; position: relative;
-					font-weight: 700;
-					line-height: 55px;">Products Categories							
-					</h2>
-				</div>
-			
-
-				<div class="row clearfix">
-					{% for n in productsData %}
-
-					<!-- Service One Single -->
-					
-					<div class="service-one__single col-lg-4 col-md-12 col-sm-12">
-						 <div class="service-one__single-inner wow fadeInLeft" data-wow-delay="0ms" 
-						 data-wow-duration="">
-							<img src="{{ n.product_image.url }}" style="height: 140px;" alt="" height="" class="img-fluid">
-							<!-- <span class="service-one__icon icon-renewable-energy"></span> -->
-							<h3 class="service-one__title"><a href="water saver.html"> {{n.product_name}} </a></h3>
-							 <div class="service-one__text">{{n.product_discription}} </div> 
-							<a href="/{{n.product_slug}}" class="service-one__read-more">Read More <span
-									class="service-one__read-arrow icon-right-arrow"></span></a>
-						</div>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-		</section>
-		<!-- Service One -->
-	
-
-		 <section class="project-one" style="position: relative;
-		 padding: 10px 0px 0px;">
-			<div class="container">
-	
-				<div class="section-title centered">
-					<span class="section-title__tagline">Best For You</span>
-					<h2 class="section-title__title" style="font-weight: 500;
-					line-height: 30px;
-					font-size: 40px;">Products you need	</h2>
-					<!-- <div class="section-title__text">We adopt an individual approach with each and every client and our
-						business <br> model is built on the following key promises.</div> -->
-				</div>
-
-				<div class="three-item-carousel owl-theme owl-carousel thm-owl__carousel" data-owl-options='{
-					"animateOut": "fadeOut",
-					"animateIn": "fadeIn",
-					"loop":true,
-					"margin":10,
-					"nav":true,
-					"autoplayTimeout":5000,
-					"autoHeight": true,
-					"smartSpeed": 500,
-					"autoplay": 6000,
-					"navText": ["<span class=\"icon-left-arrow-2\"></span>","<span class=\"icon-right-arrow-2\"></span>"],
-					"responsive":{
-						"0":{
-							"items":1
-						},
-						"768":{
-							"items":2
-						},
-						"1200":{
-							"items":3
-						}
-					}
-				}'>
-
-				{% for n in subproductData %}
-					<div class="project-one__single">
-						
-						<div class="project-one__image">
-							<img src="{{n.sub_product_image.url}}" alt=""  />
-							<div class="project-one__overlay-box" style="position: absolute;
-							left: 20px;
-	                            right: 10px;
-	                            bottom: 8px;
-	                            overflow: hidden;
-	                            padding: 8px 10px;
-	                            border-radius: 1px;
-	                            border-left: 2.5px solid var(--solapa-primary);">
-								<div class="project-one__sub-title">{{n.sub_product_name}}</div>
-								<h3 class="project-one__title"><a href="over flow alarm.html">{{n.sub_product_discription}}</a></h3>
-								<a href="over flow alarm.html" class="project-one__arrow">
-									<span class="icon-right-arrow-1"></span>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					{% endfor %}
-			</div>
-		</section> 
-		
-		<!-- Energy Two -->
-		<!-- End Energy Two -->
-
-		<!-- Testimonial One -->
-		<section class="testimonial-one" style="position: relative;
-		padding: 10px 0px 20px;">
-				<div class="section-title centered">
-					<h2 class="section-title__title" style="font-weight: 500 !important;">Happy Customers Said</h2>
-				</div>
-				<div class="testimonial-carousel owl-theme owl-carousel thm-owl__carousel" data-owl-options='{
-					"loop":true,
-					"margin":0,
-					"nav":true,
-					"autoplayTimeout":5000,
-					"autoHeight": true,
-					"smartSpeed": 500,
-					"autoplay": 6000,
-					"navText": ["<span class=\"icon-left-arrow-2\"></span>","<span class=\"icon-right-arrow-2\"></span>"],
-					"responsive":{
-						"0":{
-							"items":1
-						},
-						"768":{
-							"items":1
-						},
-						"1200":{
-							"items":1
-						}
-					}
-				}'>
-
-					<!-- Testimonial One Single -->
-					<div class="testimonial-one__single">
-						<div class="testimonial-one__text" >"""I am using WLC-PRO product since last 5 years and still its working flawlessly with my 1hp submergible pump.
-						
-												
-</div>
-						<div class="testimonial-one__author-info">
-							{% comment %} <span class="testimonial-one__quote-icon icon-quote-lefts"></span> {% endcomment %}
-							<!--<div class="testimonial-one__author-image">
-								<img src="assets/images/authors/author-1.jpg" alt="" />
-							</div>-->
-							<h3 class="testimonial-one__title">- Manish Diwedi (End Customer)</h3>
-							<div class="testimonial-one__designation">Ministry of Electronics</div>
-						</div>
-					</div>
-
-					<!-- Testimonial One Single -->
-					{% comment %} <div class="testimonial-one__single">
-						<div class="testimonial-one__text">Future Factory India is the one stop destination that
-							provides a <br> holistic perspective on the trends, tools & technologies that will <br> bear
-							a significant impact on the Manufacturing</div>
-						<div class="testimonial-one__author-info">
-							<span class="testimonial-one__quote-icon icon-quote-lefts"></span>
-							<div class="testimonial-one__author-image"> {% endcomment %}
-								<!--<img src="assets/images/authors/author-1.jpg" alt="" />-->
-							{% comment %} </div>
-							<h3 class="testimonial-one__title">Mahufuz RIad</h3>
-							<div class="testimonial-one__designation">Ministry of Electronics</div>
-						</div>
+					<p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+					<form method="POST" action="">
+					{% csrf_token %}
+					<!-- Email input -->
+					{% comment %} <div class="form-outline mb-4">
+					  <input  name="email" type="email"   id="form3Example3" class="form-control form-control-lg"
+						placeholder="Enter  email address" />
+					  <label class="form-label" for="form3Example3" name="email">Email address</label>
 					</div> {% endcomment %}
-
-					<!-- Testimonial One Single -->
-					{% comment %} <div class="testimonial-one__single">
-						<div class="testimonial-one__text">Future Factory India is the one stop destination that
-							provides a <br> holistic perspective on the trends, tools & technologies that will <br> bear
-							a significant impact on the Manufacturing</div>
-						<div class="testimonial-one__author-info">
-							<span class="testimonial-one__quote-icon icon-quote-lefts"></span> {% endcomment %}
-							<!--<div class="testimonial-one__author-image">
-								<img src="assets/images/authors/author-1.jpg" alt="" />
-							</div>--> 
-							{% comment %} <h3 class="testimonial-one__title">Mahufuz RIad</h3>
-							<div class="testimonial-one__designation">Ministry of Electronics</div> {% endcomment %}
+					 <div class="d-flex flex-row align-items-center mb-4">
+						<i class=""></i>
+						<div class="form-outline flex-fill mb-0">
+						  <input name="email" type="email" id="form3Example3c" class="form-control" />
+						  <label class="form-label" for="form3Example3c"name="email" >Your Email</label>
 						</div>
+					  </div> 
+		  
+					<!-- Password input -->
+					{% comment %} <div class="form-outline mb-3">
+					  <input  name="password" type="password"  id="form3Example4" class="form-control form-control-lg"
+						placeholder="Enter password" />
+					  <label class="form-label" for="form3Example4" name="password">Password</label>
+					</div> {% endcomment %}
+					 <div class="d-flex flex-row align-items-center mb-4">
+						<i class=""></i>
+						<div class="form-outline flex-fill mb-0">
+						  <input type="password" name="password" id="form3Example4c" class="form-control" />
+						  <label class="form-label" for="form3Example4c"name="password" >Password</label>
+						</div>
+					  </div>
+		  
+					<div class="d-flex justify-content-between align-items-center"> 
+					  <!-- Checkbox -->
+					  <div class="form-check mb-0">
+						<input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+						<label class="form-check-label" for="form2Example3">
+						  Remember me
+						</label>
+					  </div>
+					  <a href="#!" class="text-body">Forgot password?</a>
 					</div>
-
+		  
+					<div class="text-center text-lg-start mt-4 pt-2">
+					   
+						 <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+							<button type="submit" class="theme-btn btn-style-two">Login</button>
+						  </div>
+						<p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="{% url "ragistration" %}"
+						  class="link-danger">Register</a></p>
+					</div>
+		  
+				  </form> 
+				 
+				  
 				</div>
+			  </div>
 			</div>
-		</section>
-	
-		<footer class="site-footer" style="margin-top: 20px;">
+			<div
+			  
+			  
+			 
+		  
+			  
+			  <div>
+				<a href="#!" class="text-white me-4">
+				  <i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#!" class="text-white me-4">
+				  <i class="fab fa-twitter"></i>
+				</a>
+				<a href="#!" class="text-white me-4">
+				  <i class="fab fa-google"></i>
+				</a>
+				<a href="#!" class="text-white">
+				  <i class="fab fa-linkedin-in"></i>
+				</a>
+			  </div>
+			  <!-- Right -->
+			</div>
+		  </section>
+		  <footer class="site-footer" style="margin-top: 20px;">
 			<div class="site-footer__shape-one" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
 			</div>
 			<div class="site-footer__shape-two" style="background-image: url(/static/images/shapes/footer-shape-1.png)">
@@ -587,14 +444,8 @@
 
 		</footer>
 
-	
-
-	
-
-			
-		<!-- End PageWrapper -->
-
-	
+	</div>
+	<!-- End PageWrapper -->
 
 	<!-- Scroll To Top -->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
@@ -615,11 +466,10 @@
 	<script src="/static/assets/vendors/swiper/swiper.min.js"></script>
 	<script src="/static/js/solapa-script.js"></script>
 
-
-
 </body>
 
 
 
 
 </html>
+        
